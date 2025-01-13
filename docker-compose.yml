@@ -1,8 +1,8 @@
 version: '2.4'  # The last version of Docker Compose file format that directly supports mem_limit and cpus
 services:
   counter-service:
-    container_name: counter-service-exercise
-    image: 084828604098.dkr.ecr.us-east-1.amazonaws.com/counter-service-exercise:latest
+    container_name: ci-cd-project
+    image: 084828604098.dkr.ecr.us-east-1.amazonaws.com/ci-cd-project:latest
     volumes:
       - ./data:/data
     ports:

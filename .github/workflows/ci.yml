@@ -123,11 +123,11 @@ jobs:
          args: --severity-threshold=high --policy-path=.snyk
       continue-on-error: true
 
-###########################################################
-###         PUSH IMAGE TO ECR AND DEPLOY TO EC2         ###
-###     Tag Docker image as "latest" and push to ECR    ###
-###               Deploy to EC2 using SSH               ###
-########################################################### 
+############################################################
+###         PUSH IMAGE TO ECR AND DEPLOY TO EC2          ###
+###     Tag Docker image as "latest" and push to ECR     ###
+###               Deploy to EC2 using SSH.               ###
+############################################################
 
     - name: Push Docker image to Amazon ECR
       env:
